@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- link rel="stylesheet" href="lang-en.json">
+  <link rel="stylesheet" href="lang-fr.json">
+  <link rel="stylesheet" href="lang-ja.json" -->
+</head>
+<body>
+  <header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2 data-i18n="test"> :</h2>
+    <p data-i18n="about-text"></p>
+  </section>
+
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="project">
+      <h3>Projet 1</h3>
+      <p>Description du projet 1.</p>
+    </div>
+    <div class="project">
+      <h3>Projet 2</h3>
+      <p>Description du projet 2.</p>
+    </div>
+    <!-- Ajoute d'autres projets ici -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <button id="btn-lang-fr">Français</button>
+  <button id="btn-lang-en">English</button>
+  <button id="btn-lang-ja">日本語</button>
+
+  <!-- script src="lang-en.json"></script>
+  <script src="lang-fr.json"></script>
+  <script src="lang-ja.json"></script -->
+  <script src="script.js"></script>
+</body>
+</html>
